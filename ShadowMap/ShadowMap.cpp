@@ -95,7 +95,7 @@ void draw_pass_1() //draw from light point-of-view
    }
 
    glEnable(GL_POLYGON_OFFSET_FILL);
-   glPolygonOffset(5.0, 3.0); //No offset is being applied when params are 0.0, 0.0. Try changing these numbers to fix the shadow map "acne" problem
+   glPolygonOffset(50.0, 30.0); //No offset is being applied when params are 0.0, 0.0. Try changing these numbers to fix the shadow map "acne" problem
 
    draw_scene(V_light);
    glDisable(GL_POLYGON_OFFSET_FILL);
